@@ -1,7 +1,6 @@
 import requests
 
 def fetch_dog_data():
-    """Function to get data from API and handle errors."""
     try:
         print("Connecting to internet...")
         response = requests.get("https://random.dog/woof.json", timeout=10)
@@ -43,4 +42,5 @@ def main():
         print("Saved to results.txt")
 
 if __name__ == "__main__":
+
     main()
